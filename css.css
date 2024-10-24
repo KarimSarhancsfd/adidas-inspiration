@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-cart img {
+    width: 25px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d5e3f2;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.shop-now {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    color: #888;
+    font-size: 1.1em;
+}
+/*we need to inhreite from html file class called sale to make sale text color only red*/
+
+.nav-menu .menu-item a[href="icons-sale.png"] {
+  color: red;
+}
+/* Base styles for the navigation */
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  
+  .menu-item {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  /* Hide the dropdown by default */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show the dropdown when the menu-item is hovered */
+  .menu-item:hover .dropdown-menu {
+    display: block;
+  }
+  
